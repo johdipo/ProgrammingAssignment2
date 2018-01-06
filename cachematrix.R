@@ -30,8 +30,6 @@ cacheSolve <- function(x, ...) {
   
   # If not inversed matrix is cached, 
   
-  ##AAA
-  
   data <- x$get()       # Get the matrix from the special matrix object defined by makeCacheMatrix
   i <- solve(data, ...) # Compute the inverse of the matrix got from the previous line
   x$setinverse(i)         # Set the inverse matrix to the object
